@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DashBoard.master.cs" Inherits="ResitrationForm.DashBoard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title></title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Mobilestyx</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton3" class="nav-link active " aria-current="page" runat="server" href="UserForm.aspx"><i class="bi bi-house-door-fill "></i>Home</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton4" class="nav-link active" aria-current="page" runat="server" href="ChangePassUser.aspx"><i class="fa-solid fa-key"></i>Update Password</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton1" class="nav-link active" aria-current="page" runat="server" href="changeprofile.aspx"><i class="fa-solid fa-user-pen"></i>Update Profile Picture</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton2" class="nav-link active" aria-current="page" runat="server" href="changedetails.aspx"><i class="fa fa-user" aria-hidden="true"></i>Update Details</asp:LinkButton>
+                            </li>
+
+                            <li class="nav-item">
+                                <div style="margin-left: 580px">
+                                    <asp:LinkButton ID="LinkButton5" class="nav-link active" aria-current="page" runat="server" href="LoginForm.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</asp:LinkButton>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
